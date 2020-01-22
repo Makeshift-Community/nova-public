@@ -8,13 +8,8 @@ module.exports = function(client) {
 	client.registry
 		.registerGroups([
 			["developer", "Developer"],
-			["makeshift", "Makeshift"],
-			["resources", "Resources"],
-			["memes-warframe", "Memes (Warframe)"],
-			["memes-makeshift", "Memes (Makeshift)"],
-			["memes-generic", "Memes (general)"],
-			["other", "Other"],
-			["music", "Music"]
+			["warframe", "Warframe"],
+			["other", "Other"]
 		])
 		.registerDefaultGroups()
 		.registerDefaultTypes()

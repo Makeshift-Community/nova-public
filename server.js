@@ -4,7 +4,6 @@ const discordErrorHandler = require("discord.js-handles")
 
 //Load info
 const token = require("./token.json")	//I'm an idiot - Thanks for the lesson
-const makeshift = require("./src/resources/makeshift.json")
 
 //Create new Discord client
 const makeshiftbot = new commando.Client({
@@ -18,9 +17,7 @@ require("./src/commands/index")(makeshiftbot)
 
 let handlerOptions = {
 	logAllGuilds: false,
-	guilds: [
-		makeshift.guild
-	],
+	guilds: [],
 	name: "nova-public",
 	notify: {
 		users: [

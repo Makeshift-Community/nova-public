@@ -1,5 +1,4 @@
-const backend = require("./../resources/backend.json")
-const makeshift = require("./../resources/makeshift.json")
+const emojis = require("./../resources/emojis.json")
 
 /**
  * Reacts with "TM" to a message ending with "soon" in order to keep up the soon™ meme.
@@ -12,10 +11,8 @@ module.exports = function(bot){
 		if(!message.content.toLowerCase().endsWith("soon")) return
 		//Check if message was issued on a guild
 		if(!message.member) return
-		//Check if message of guild was Makeshift
-		if(message.member.guild.id != makeshift.guild) return
 
-		message.react(message.client.guilds.get(backend.guild).emojis.get(backend.emojis.soontm))
+		message.react(message.client.guilds.get(emojis.guild).emojis.get(emojis.emojis.soontm))
 			.catch(console.error)
 
 	})
