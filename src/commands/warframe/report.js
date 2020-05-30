@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(client, {
 			name: "report",
 			group: "warframe",
-			description: "How to report inadequate player bevaior to Digital Extremes"
+			description: "How to report inadequate player behavior to Digital Extremes"
 		})
 	}
 	
@@ -14,13 +14,13 @@ module.exports = class extends Command {
 		await message.channel.send({content:
 			stripIndents`First of all: if you still have the opportunity to collect evidence (like screenshots) __do it right now__!
 
-			Reporting a player for bad behavior (in the game) shouldn't be done for fun.
+			Reporting a player for bad behavior (in the game) shouldn't be done for fun; DE takes these requests seriously.
 			Make sure that the player has broken either the Terms of Use or the End User License Agreement listed here:
 			<https://www.warframe.com/terms> and <https://www.warframe.com/eula>
 			This usually involves things such as:
 			:white_small_square: Leeching public missions for prolonged time (thus circumventing the AFK-detection)
-			:white_small_square: Inadequate chat behavior (including insults, spam and bullying)
-			:white_small_square: Heavy bug abuse, hacking or cheating (very rarely happens)
+			:white_small_square: Inadequate chat behavior (including insults, spam, bullying and doxxing)
+			:white_small_square: Heavy bug abuse, hacking or cheating (happens rarely)
 			:white_small_square: Offensive usernames
 			
 			In order to report a Warframe player for bad behavior (to Digital extremes) go to their official site

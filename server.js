@@ -38,14 +38,24 @@ require("./src/modules/index")(makeshiftbot)
 makeshiftbot.login(token)
 	.catch(console.error)
 //*/
-makeshiftbot.on("ready", () => {
-	atNovaHelp(makeshiftbot.user)
-})
-makeshiftbot.on("resume", ()=> {
-	atNovaHelp(makeshiftbot.user)
-})
+makeshiftbot
+	.on("ready", () => {
 
-function atNovaHelp(user){
+		setStatus(makeshiftbot.user)
+	})
+	.on("shardReady", () => {
+
+		setStatus(makeshiftbot.user)
+	})
+	.on("shardResume", ()=> {
+
+		setStatus(makeshiftbot.user)
+	})
+
+
+	.on("invalidated", ()=> setStatus(makeshiftbot.user))
+
+function setStatus(user){
 	user.setPresence({
 		activity: {
 			name: "@Nova help",

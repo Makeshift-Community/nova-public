@@ -14,6 +14,7 @@ module.exports = class extends Command {
 
 	async run(message) {
 		try {
+			//TODO: implement command (worldstate cetus)
 			console.log("CETUS RAN")
 			await worldState()
 			message.react("✅")	
