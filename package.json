@@ -23,9 +23,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"common-tags": "^1.8.0",
-		"discord.js": "github:discordjs/discord.js",
-		"discord.js-commando": "github:discordjs/Commando",
-		"discord.js-handles": "github:NKN1396/discord.js-handles#master",
+		"discord.js": "^12.2.0",
+		"discord.js-commando": "^0.10.0",
 		"lodash": "^4.17.15",
 		"luxon": "^1.17.2"
 	}
